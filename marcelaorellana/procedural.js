@@ -1,11 +1,9 @@
  
 function isPrime(num) {
-  
-  for( var j = 2; j <= num/2; j++){
+  var isprime = true;
+  for( var j = 2; j < num; j++){
     if( num%j == 0){
-    	var isprime = false;
-    }else{
-    	var isprime = true;
+    	 isprime = false;
     }
 }
     return isprime;
