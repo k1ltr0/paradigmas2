@@ -1,16 +1,24 @@
+// agrego un arreglo vacio para pushear los primos
+var arr = [];
+
 function isPrime(num) {
-  //...
+    for (var j = 2; j < num; j++) {
+        if (num % j === 0) {
+            return false;
+        }
+    }
+    return j;
 }
 
 function getPrimes(start, end) {
-  for (var i = 2; i < 20; i++) {
-    var isPrime = true;
+    for (var i = start; i < end; i++) {
+        var isprime = true;
 
-    //...
-
-    if (isPrime) {
-      console.log(i);
+        if (isPrime(i)) {
+            console.log(i);
+            arr.push(i);
+        }
     }
-  }
+    return arr;
 
 }
