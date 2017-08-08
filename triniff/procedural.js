@@ -5,7 +5,7 @@ function isPrime(num) {
       if (num%j == 0) {
         isprime = false;
       }
-    };
+    };	
   return isprime;
 }
 
