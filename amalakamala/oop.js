@@ -14,19 +14,19 @@ Note.prototype.toString = function () {
 
 function Notes(){
   this.data = []; 
-  this.data.sort();
+  this.data.sort(); //Acá ordena
 }
 
 Notes.prototype.add = function (note){  
   if(note instanceof Note){    
     this.data.unshift(note);
   }else{
-    return error;
+    throw exception; // throw exception
   }
 };
 
 Notes.prototype.toString = function (){
-   return this.data.join('\n');
+   return this.data.join('\n'); // Acá une elementos 
 };
 
 module.exports.Note = Note;
